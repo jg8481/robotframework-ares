@@ -34,7 +34,7 @@ Setup Run ID Details
     Should Be Equal As Strings    ${response.status_code}    200
 
     # set ${run_id} as suite variable, so it can be used in entire suite
-    Set Suite Variable   ${run_id}    ${response.json()['data'][0]['runId']}
+    Set Global Variable   ${run_id}    ${response.json()['data'][0]['runId']}
 
 
 Post Module Data Details
@@ -85,6 +85,8 @@ Generate Post Test Body
     [Documentation]    Keyword to create json body for post test result
 
     ${end_date_time}=    Get Current Date
+
+    ${test_status}=    Get API Helper Test Status    ${TEST STATUS}
 
     &{child_params}=   Create Dictionary
     ...    runId=${run_id}
@@ -166,3 +168,12 @@ Get API Helper Status
     ...    '${status}'!='START'    ended
 
     [Return]    ${set_up_status}
+
+Get API Helper Test Status
+    [Arguments]    ${status}
+
+    ${test_status}=    Set Variable If
+    ...    '${status}'=='PASS'    PASSED
+    ...    '${status}'!='PASS'    FAILED
+
+    [Return]    ${test_status}

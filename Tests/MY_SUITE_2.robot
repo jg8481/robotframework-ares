@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ARES${/}ARES_KEYWORDS.robot
+Resource    ${EXECDIR}${/}ARES${/}ARES_KEYWORDS.robot
 
 # ARES: setup/teardown
 Suite Setup      My Project Suite Setup    3
@@ -8,11 +8,12 @@ Test Setup       My Project Test Setup
 Test Teardown    My Project Test Teardown
 
 *** Test Cases ***
-My First Test Case
-    Sleep   6s
+My Fourth Test Case
+    Sleep   15s
 
-My Second Test Case
-    Sleep   1s
+My Fifth Test Case
+    Sleep   5s
+    Should Be Equal   Shiva    Adirala
 
-My Third Test Case
-    Sleep   1s
+My Sixth Test Case
+    Sleep   10s
