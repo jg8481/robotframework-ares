@@ -1,6 +1,7 @@
 # Robotframework ARES
 
-This repo consist of example for using TestAstra/ARES in robotframework
+This repo consist of example for using TestAstra/ARES in robotframework 
+[![HitCount](http://hits.dwyl.io/adiralashiva8/robotframework-ares.svg)](http://hits.dwyl.io/adiralashiva8/robotframework-ares)
 
 ---
 
