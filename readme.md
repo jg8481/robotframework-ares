@@ -41,7 +41,7 @@ In this repo I have created AresListener.py (robotframework-listener) using pyth
 Prerequisites
  - Basic knowledge on robotframework
  - Python requests library installed (`pip install requests`) to make REST API calls
- - Created project in ARES Dashboard ( creating project in ARES is explained in [01_Introduction.md](/Tutorials/01_Introduction.md) )
+ - Created project in ARES Dashboard ( creating project in ARES is explained in [01_Introduction.md](https://github.com/testastra/ARES/blob/master/Tutorials/01_Introduction.md))
 
 
 Steps to Use:
