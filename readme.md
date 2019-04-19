@@ -27,20 +27,21 @@ This repo consist of example for using TestAstra/ARES in robotframework
 In order to use ARES Dashboard we need to do few Rest API calls at designated places in script. They are
 
   1. Before Start Of Execution : To Create ARES session
-  2. On Suite Start     : To provide suite initiated info to ARES
-  3. On Test Case End         : To provide test result to ARES
-  4. On Suite End        : To provide suite ended info to ARES
+  2. On Suite Start            : To provide suite initiated info to ARES
+  3. On Test Case End          : To provide test result to ARES
+  4. On Suite End              : To provide suite ended info to ARES
   5. After End of Execution    : To Close ARES session
 
 ---
 
 HOW TO USE:
 
-Prerequisites
+Prerequisites (Mandatory)
  - Knowledge on robotframework
- - Python requests library installed (`pip install requests`) to make REST API calls
- - Created project in ARES( Refer [01_Introduction.md](https://github.com/testastra/ARES/blob/master/Tutorials/01_Introduction.md))
-
+ - Install Python requests to make REST API calls
+   > pip install requests
+ - Created project in ARES
+   > Refer [01_Introduction.md](https://github.com/testastra/ARES/blob/master/Tutorials/01_Introduction.md)
 
 Steps to Use:
 

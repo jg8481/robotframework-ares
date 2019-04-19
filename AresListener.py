@@ -90,7 +90,7 @@ class AresListener:
 def setup_ares_session(uri, token, work_space, project, action):
 
     # setup payload
-    data = {
+    raw_data = {
         "token":str(token),
         "ws_name":str(work_space),
         "project_name":str(project),
@@ -98,7 +98,7 @@ def setup_ares_session(uri, token, work_space, project, action):
     }
 
     # perform post
-    session_request = requests.post(url = uri + "/createrunid" , data = data)
+    session_request = requests.post(url = uri + "/createrunid" , data = raw_data)
 
     # convert post response to JSON
     request_response = session_request.json()
@@ -108,7 +108,7 @@ def setup_ares_session(uri, token, work_space, project, action):
 
 def setup_suite_session(uri, token, work_space, project, run_id, module_name, total_tests, action):
     # setup payload
-    data = {
+    raw_data = {
         "token":str(token),
         "runId":str(run_id),
         "ws_name":str(work_space),
@@ -120,13 +120,13 @@ def setup_suite_session(uri, token, work_space, project, run_id, module_name, to
     }
 
     # perform post
-    session_request = requests.post(url = uri + "/addmoduledata" , data = data)
+    session_request = requests.post(url = uri + "/addmoduledata" , data = raw_data)
 
 
 def push_test_details(uri, token, project_key, run_id, project_name, module_name, test_case_title,
  test_status, fail_message, test_browser, start_time, run_user, execution_mode, device):
     # setup payload
-    data = {
+    raw_data = {
         'graphData':{
             "runId":str(run_id),
             "productName":str(project_name),
@@ -159,7 +159,7 @@ def push_test_details(uri, token, project_key, run_id, project_name, module_name
     }
 
     # perform post
-    session_request = requests.post(url = uri + "/addgraphdata" , json=data, headers=headers)
+    session_request = requests.post(url = uri + "/addgraphdata" , json=raw_data, headers=headers)
 
 def get_current_date_time(format,trim):
     t = datetime.datetime.now()
