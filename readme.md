@@ -46,8 +46,8 @@ Prerequisites (Mandatory)
 Steps to Use:
 
  - Step 1: Download this repo
- - Step 2: Copy AresListener.py, config.py to your project
- - Step 3: Modify config.py with USER_TOKEN, PROJECT NAME/TOKEN etc., fields
+ - Step 2: Copy `AresListener.py`, `config.py` to your project
+ - Step 3: Modify `config.py` with USER_TOKEN, PROJECT NAME/TOKEN etc., fields
    > - Create account in ARES,
    > - Create project and 
    > - Copy details which are explained in *01_Introduction.md*
