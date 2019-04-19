@@ -1,27 +1,3 @@
-'''
-
-ARES is a web based portal, which provides automation results at one place.
-It can integrate with most popular automation tools like Selenium, Protractor etc.
-
-ARES Dashboard : https://testastra.com/ares
-ARES Overview  : https://github.com/testastra/ARES
-
-In order to use ARES Dashboard we need to do few Resutful API calls at designated places in script. They are
-
-1. Before Start Of Execution : To Create ARES session
-2. Before Start Of Suite     : To provide suite initiated info to ARES
-3. End Of Test Case          : To provide test result to ARES
-4. After End Of Suite        : To provide suite ended info to ARES
-5. After End of Execution    : To Close ARES session
-
-Using robotframework-listener and python requests: Respective REST API calls are initiated at designated place.
-
-ARES Dashboard is product of testastra. Powered by ZenQ
-
-Licence: GPLv3
-
-'''
-
 import requests 
 import datetime
 import platform
