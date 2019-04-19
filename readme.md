@@ -39,7 +39,7 @@ HOW TO USE:
 Prerequisites (Mandatory)
  - Knowledge on robotframework
  - Install Python requests to make REST API calls
-   > pip install requests
+   > `pip install requests`
  - Created project in ARES
    > Refer [01_Introduction.md](https://github.com/testastra/ARES/blob/master/Tutorials/01_Introduction.md)
 
