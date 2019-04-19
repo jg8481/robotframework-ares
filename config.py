@@ -4,10 +4,10 @@ ARES_API_BASE_URI = "http://testastra.com/graph"
 
 # === MANDATORY INFO === #
 
-USER_TOKEN = "XXXXXXXXXX"
+USER_TOKEN = "XXXX"
 WORK_SPACE_NAME = "zenq_default"
-PROJECT_NAME = "MyProject"
-PROJECT_KEY = "XXXXXXX"
+PROJECT_NAME = "Dummy"
+PROJECT_KEY = "XXXX"
 PRODUCT_NAME = PROJECT_NAME
 
 # === OTHER INFO === #
