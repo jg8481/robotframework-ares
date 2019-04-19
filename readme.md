@@ -48,9 +48,11 @@ Steps to Use:
  - Step 1: Download this repo
  - Step 2: Copy AresListener.py, config.py to your project
  - Step 3: Modify config.py with USER_TOKEN, PROJECT NAME/TOKEN etc., fields
-   > Create account in ARES, Create Project and copy details which are explained in *01_Introduction.md*
+   > - Create account in ARES,
+   > - Create project and 
+   > - Copy details which are explained in *01_Introduction.md*
  - Step 4: Execute test case/suites using areslistener
-   > robot --listener AresListener.py -V config.py suite.robot
+   > `robot --listener AresListener.py -V config.py suite.robot`
  - Step 5: Go to ares dashboard
    > You can find live execution, detailed report and some charts
 
