@@ -51,7 +51,7 @@ class AresListener:
     def end_suite(self, data, suite):
         if self.test_count != 0:
             setup_suite_session(self.ARES_API_BASE_URI, self.USER_TOKEN, self.WORK_SPACE_NAME, self.PROJECT_NAME,
-             self.request_id, self.suite_name, self.test_count, "started")
+             self.request_id, self.suite_name, self.test_count, "ended")
 
     def close(self):
         setup_ares_session(self.ARES_API_BASE_URI, self.USER_TOKEN, self.WORK_SPACE_NAME, self.PROJECT_NAME, "ended")
