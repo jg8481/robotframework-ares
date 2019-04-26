@@ -51,9 +51,8 @@ Steps to Use:
    > - Create account in ARES,
    > - Create project and 
    > - Copy details which are explained in *01_Introduction.md*
- - Step 4: Execute test case/suites using areslistener (select specific version which works for you)
-   > - `robot --listener v2/AresListener.py -V config.py Tests/FirstSuite.robot` 
-   > - `robot --listener v3/AresListener.py -V config.py Tests/FirstSuite.robot`
+ - Step 4: Execute test case/suites using areslistener
+   > - `robot --listener AresListener.py -V config.py Tests/FirstSuite.robot` 
  - Step 5: Go to ares dashboard
    > You can find live execution, detailed report and some charts
 
